@@ -7,7 +7,7 @@ Uses Chainlink VRF to call a provably random number and mod it against total ent
 - Commit hashed_entries to github
 - Deploy `giveaway.sol` to mumbai testnet (add address here when deployed). Fund with testnet link
 - Call Chainlink VRF to generate provably fair number (calling `getRandomNumber` function)
-- Call `getWinnerByIndex(<round>, <entries>)` where round is 0 and entries is 119 (len of CSV) to get the winner!
+- Call `getWinnerByIndex(<round>, <entries>)` where round is 0 and entries is 100 (len of CSV) to get the winner!
 - Manually verfiy that the winner is:
 	- Following @thecozyreef
 	- If the entry is from tagging a friend, that they tagged a friend
