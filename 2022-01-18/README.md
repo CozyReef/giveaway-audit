@@ -19,11 +19,14 @@ Uses Chainlink VRF to call a provably random number and mod it against total ent
 - Deployed contract to: 0x141b51D0e0bcd42bBb6b94E42D4032bCfc0BeA8C
 - NOTE: This contract was deployed on 2022-01-09, will start with round 3 since 0,1,2 were used for the prev giveaway
 - Called `getRandomNumber`
-- Ran `npx hardhat getWinnerByIndex --network mumbai --address 0x141b51D0e0bcd42bBb6b94E42D4032bCfc0BeA8C --round 3 --entries 100` 
+- Ran `npx hardhat getWinnerByIndex --network mumbai --address 0x141b51D0e0bcd42bBb6b94E42D4032bCfc0BeA8C --round 3 --entries 240` 
+- Got '0x62' -> convert hex to decimal = 98 -> 98 "98,Retweet - Astraeaione"
+- Verify Astraeaione follows us: https://twitter.com/Astraeaione. Confirmed!
 
 
 
 ## How to verify process was fair!
 
-- Contract: https://mumbai.polygonscan.com/address/0x141b51D0e0bcd42bBb6b94E42D4032bCfc0BeA8C
+- Contract: https://mumbai.polygonscan.com/address/0x141b51D0e0bcd42bBb6b94E42D4032bCfc0BeA8C - called requestRandom once for round 3 value
 - Cozy Reef account: https://mumbai.polygonscan.com/address/0x6c89A1CbBaEf4bE6eE3Ae29C7920AD21f9b4d24E
+- Run a sha256 on `Retweet - Astraeaione` to confirm result matches hashed_entries.txt (https://passwordsgenerator.net/sha256-hash-generator/)
